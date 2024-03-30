@@ -1,0 +1,8 @@
+#navbar {
+    height: 7vh;
+    background-color: #c8ecff!important;
+}
+
+#main-section {
+    background-image: linear-gradient(#c8ecff,#f8efff);
+}
