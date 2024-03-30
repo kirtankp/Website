@@ -1,8 +1,18 @@
 #navbar {
-    height: 7vh;
     background-color: #c8ecff!important;
+    position: fixed;
 }
 
-#main-section {
+#hero_section_2 {
+   height: 100vh;
+
+}
+
+#hero_section {
     background-image: linear-gradient(#c8ecff,#f8efff);
+    height: 100vh;
+}
+
+.logo_img {
+    max-height: 75px;
 }

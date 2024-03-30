@@ -12,18 +12,20 @@
 
 <body>
 
-
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light " id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 shadow p-3 mb-5 bg-body-tertiary rounded" id="navbar">
     <div class="container-fluid" id="navbar-list">
-      <a class="navbar-brand" href="/home.html">Logo Here</a>
+      <a class="navbar-brand" href="/home.html">
+        <img class="w-75 h-100 logo_img" src="https://www.digitalvyapaar.com/assets/img/logo.png" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+    </div>
+      
+      <div class="collapse navbar-collapse px-4" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-nowrap">
           <li class="nav-item">
             <a class="nav-link" href="/Index.html">Home</a>
           </li>
@@ -37,26 +39,38 @@
             <a class="nav-link" href="contactUs.html">Contact us</a>
           </li>
         </ul>
-      </div>
     </div>
   </nav>
   <!--Navbar-->
 
   <!-- Main Content Section -->
-  <section class="container-fluid" id="section">
-    <div class="row align-items-center" id="main-section">
-      <div class="col-md-6 px-5">
+  <section class="container-fluid" id="main_section">
+    <div class="row align-items-center" id="hero_section">
+      <div class="col-md-6 px-5 text-center">
         <h1>Digital Services Provider</h1>
         <p>We belive in excellence</p>
         <a href="/contactUss.html" class="btn btn-primary btn-lg">Get Started</a>
       </div>
-      <div class="col-md-6 py-4">
+      <div class="col-md-6 py-4 text-center">
         <img class="w-75 h-100" src="./assets/home_image.svg" alt="">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Section Heading</h2>
+    <div class="row align-items-center py-5" id="hero_section_2">
+      <div class="col-md-6 py-4 text-center">
+        <img class="w-75 h-100" src="./assets/home_image_2.svg" alt="">
+      </div>
+      <div class="col-md-6 px-5 text-left">
+        <h1 class = "py-2">Digital Vyapaar</h1>
+        <p class = "py-2 pe-4">Since our establishment in 2021, Digital Vyapaar has been the best software development and digital marketing company, specializing in website design, website development,  Facebook Ads, Google Ads, search engine optimization & graphic design, pay-per-click marketing, social media marketing, Google Maps listing, and more.
+
+          At Digital Vyapaar, we strive to make your time with us as joyful as possible. Our objective is to constantly provide effective and professional results while maintaining our creative and visionary vision. We strive to go above and beyond your expectations.
+          
+          We are a digital marketing agency that believes in working together to produce effective results with content & strategies for our customers, who are always one step ahead of the competition while working with us. We have specialists that are focused on achieving results when it comes to establishing an online brand presence. We collaborate in remote teams throughout the world while staying in touch with you on a local level. From market research and analysis to branding, identity, and communications, to website and eCommerce site building, inbound, content, and social media marketing, and video and webinars, we provide creative and strategic services.</p>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Section Heading</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.</p>
       </div>
@@ -77,17 +91,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('#navbar').on('show.bs.collapse', function () {
-        $('#section').css('margin-top', $('#navbar-list').height());
-      });
-
-      $('#navbar').on('hide.bs.collapse', function () {
-        $('#section').css('margin-top', 0);
-      });
-    });
-  </script>
 </body>
 
 </html>
