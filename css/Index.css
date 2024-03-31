@@ -1,12 +1,22 @@
 #navbar {
     background-color: #c8ecff!important;
     position: fixed;
+    z-index: 2;
 }
 
 #hero_section_2 {
    height: 100vh;
 
 }
+#hero_section_3 {
+    background-image: linear-gradient(#FCF8FB ,#D7FEFC);
+    position: relative;
+ 
+ }
+#hero_section_4 {
+    background-image: linear-gradient(#D7FEFC ,#FCF8FB );
+ 
+ }
 
 #hero_section {
     background-image: linear-gradient(#c8ecff,#f8efff);
