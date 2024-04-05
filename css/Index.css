@@ -1,18 +1,56 @@
 #navbar {
-    background-color: #c8ecff!important;
+    background-color: #c8ecff !important;
     position: fixed;
-}
-
-#hero_section_2 {
-   height: 100vh;
-
+    z-index: 3;
 }
 
 #hero_section {
-    background-image: linear-gradient(#c8ecff,#f8efff);
-    height: 100vh;
+    background-image: linear-gradient(#c8ecff, #f8efff);
+}
+
+.slideIn {
+    animation: fadeIn 1.25s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#hero_section_3 {
+    background-image: linear-gradient(#FCF8FB, #D7FEFC);
+    position: relative;
+
+}
+
+#hero_section_4 {
+    background-image: linear-gradient(#D7FEFC, #FCF8FB);
+
+}
+
+#footer_section {
+    background-image: linear-gradient(#FCF8FB, #FFFFFF);
+
 }
 
 .logo_img {
     max-height: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+hr {
+    margin: 0;
 }
