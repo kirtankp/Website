@@ -16,19 +16,16 @@
 }
 
 .slideIn {
-    animation: fadeIn 1.25s ease;
+    animation: fadeIn 1.5s;
 }
 
 @keyframes fadeIn {
     0% {
+        font-size: 0%;
         opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
     }
     100% {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -39,6 +36,7 @@
 
 #hero_section_4 {
     background-image: linear-gradient(#D7FEFC, #FCF8FB);
+    padding:6rem 0 3rem 0 !important;
 }
 
 #footer_section {
@@ -140,4 +138,13 @@ textarea:not(:placeholder-shown)+span {
 .form-group:focus-within,
 .telephone:focus-within {
     border: 1px solid #0dcaf0;
+}
+.navbar-nav .nav-link {
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+    text-decoration: underline;
 }
