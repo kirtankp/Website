@@ -1,7 +1,15 @@
+
 #navbar {
-    background-color: #c8ecff !important;
     position: fixed;
     z-index: 3;
+    background-color: transparent;
+    transition: 1s all;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
 }
 
 #hero_section {
@@ -9,41 +17,40 @@
 }
 
 .slideIn {
-    animation: fadeIn 1.25s ease;
+    animation: fadeIn 1.5s;
 }
 
 @keyframes fadeIn {
     0% {
+        font-size: 0%;
         opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
     }
-
     100% {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
     }
 }
 
 #hero_section_3 {
     background-image: linear-gradient(#FCF8FB, #D7FEFC);
     position: relative;
-
 }
 
 #hero_section_4 {
     background-image: linear-gradient(#D7FEFC, #FCF8FB);
-
+    padding:6rem 0 3rem 0 !important;
 }
 
 #footer_section {
     background-image: linear-gradient(#FCF8FB, #FFFFFF);
-
 }
 
 .logo_img {
     max-height: 75px;
+    transition: transform 0.3s;
+}
+
+.logo_img:hover {
+    transform: scale(1.1);
 }
 
 a {
@@ -54,3 +61,168 @@ a {
 hr {
     margin: 0;
 }
+
+.input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+}
+
+.form-group,
+.telephone {
+    position: relative;
+    /* border: 1px solid; */
+    background-color: white;
+    border: 1px solid darkgray;
+}
+
+.form-group input {
+    width: 100%;
+    outline: none;
+    border: 0;
+    /* background-color:    ; */
+    padding: 15px 15px 10px 15px;
+    font-size: 1em;
+}
+
+.telephone input {
+    width: 100%;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    padding: 12.5px 15px 12.5px 15px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    width: 100%;
+    outline: none;
+    border: 0;
+    /* background-color: transparent; */
+    margin-top: 15px;
+    padding: 0px 15px 10px 15px;
+    font-size: 1em;
+}
+
+.form-group span {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: darkgrey;
+}
+
+input:not(:placeholder-shown):not(:focus)+span,
+textarea:not(:placeholder-shown):not(:focus)+span {
+    /* color: inherit; */
+    color: darkgray;
+    transform: translateX(-3px) translateY(-11px);
+    font-size: 0.75em;
+    padding: 0px 5px;
+    /* background-color: transparent; */
+}
+
+input:focus+span,
+input:not(:placeholder-shown)+span,
+textarea:focus+span,
+textarea:not(:placeholder-shown)+span {
+    color: #0dcaf0;
+    transform: translateX(-3px) translateY(-11px);
+    font-size: 0.75em !important;
+    padding: 0px 5px;
+    /* background-color: transparent; */
+}
+
+.form-control:focus {
+    box-shadow: none;
+    /* background-color: transparent; */
+}
+
+.form-group:focus-within,
+.telephone:focus-within {
+    border: 1px solid #0dcaf0;
+}
+.navbar-nav .nav-link {
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover{
+    color: #ff6600;
+    transform: scale(1.2);
+    text-decoration: underline;
+    
+}
+.card {
+    background-color: #f8f9fa; 
+    border: 1px solid #ced4da;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    
+}
+
+#contact_us_form {
+    transition: transform 0.2s;
+}
+
+#contact_us_form:hover {
+    transform: scale(1.02);
+}
+
+
+/* CSS for image pop-up animation */
+@keyframes popUpFromInside {
+    from {
+        transform: scale(0.8); /* Start with a smaller size */
+    }
+    to {
+        transform: scale(1); /* Pop up to full size */
+    }
+}
+.animate-pop-up {
+    animation: popUpFromInside 0.5s; /* Apply the pop-up animation */
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+/* 
+.animate-pop-up {
+    opacity: 0;
+    transform: translateY(50px); /* Initially translate content downward */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-pop-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Translate content upward when visible */
+}
+
+.animate-pop-up.reverse {
+    opacity: 0;
+    transform: translateY(-50px); /* Translate content upward when leaving */
+} */
